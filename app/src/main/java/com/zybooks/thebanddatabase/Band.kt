@@ -1,4 +1,6 @@
 package com.zybooks.thebanddatabase
-
-class Band {
-}
+data class Band(
+    var id: Int = 0,
+    var name: String = "",
+    var description: String = ""
+)
