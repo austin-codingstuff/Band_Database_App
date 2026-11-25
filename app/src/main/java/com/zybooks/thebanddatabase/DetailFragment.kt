@@ -5,11 +5,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+
+const val ARG_BAND_ID = "band_id"
+
 class DetailFragment : Fragment() {
     private var band: Band? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var bandId = 1
+        // Get the band ID from the fragment arguments
+        arguments?.let { bandId = it.getInt(ARG_BAND_ID) }
 // Get the selected band
         band = BandRepository.getInstance(requireContext()).getBand(bandId)
     }
