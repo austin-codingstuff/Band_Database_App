@@ -7,6 +7,9 @@ import android.widget.Button
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+
+private const val ARG_BAND_ID = "band_id"
+
 class ListFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -24,9 +27,16 @@ class ListFragment : Fragment() {
             button.layoutParams = layoutParams
 // Display band's name on button
             button.text = band.name
+            button.tag = band.id
 // Navigate to detail screen when clicked
             button.setOnClickListener { buttonView: View ->
-                buttonView.findNavController().navigate(R.id.show_item_detail)
+                // Create fragment arguments containing the selected band ID
+                val selectedBandId = buttonView.tag as Int
+                val args = Bundle()
+                args.putInt(ARG_BAND_ID, selectedBandId)
+
+                // Send band ID to DetailFragment
+                buttonView.findNavController().navigate(R.id.show_item_detail, args)
             }
 // Add button to the LinearLayout
             layout.addView(button)
