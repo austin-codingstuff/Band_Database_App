@@ -24,8 +24,14 @@ class ListFragment : Fragment() {
             val args = Bundle()
             args.putInt(ARG_BAND_ID, selectedBandId)
 
-            // Replace list with details
-            itemView.findNavController().navigate(R.id.show_item_detail, args)
+            val detailFragContainer = rootView.findViewById<View>(R.id.detail_frag_container)
+            if (detailFragContainer == null) {
+                // Replace list with details
+                itemView.findNavController().navigate(R.id.show_item_detail, args)
+            } else {
+                // Show details on the right
+                detailFragContainer.findNavController().navigate(R.id.fragment_detail, args)
+            }
         }
 
         // Send bands to RecyclerView
