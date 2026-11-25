@@ -19,8 +19,7 @@ class DetailFragment : Fragment() {
         if (band != null) {
             val nameTextView = rootView.findViewById<TextView>(R.id.band_name)
             nameTextView.text = band!!.name
-            val descriptionTextView = rootView.findViewById<TextView>
-            (R.id.band_description)
+            val descriptionTextView = rootView.findViewById<TextView>(R.id.band_description)
             descriptionTextView.text = band!!.description
         }
         return rootView

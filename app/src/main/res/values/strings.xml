@@ -5,10 +5,34 @@
         <item>The Beatles</item>
         <item>Nirvana</item>
         <item>U2</item>
+        <item>Whitechapel</item>
+        <item>Periphery</item>
+        <item>Ween</item>
+        <item>Primus</item>
+        <item>Trivium</item>
+        <item>Hootie and the Blowfish</item>
+        <item>Korn</item>
+        <item>Three Days Grace</item>
+        <item>Alice in Chains</item>
+        <item>Staind</item>
+        <item>Shinedown</item>
+        <item>Alter Bridge</item>
     </string-array>
     <string-array name="descriptions">
         <item>An English rock band that formed in Liverpool in 1960.</item>
         <item>An American rock band that formed in Washington in 1987.</item>
         <item>An Irish rock band from Dublin that formed in 1976.</item>
+        <item>Whitechapel is an American deathcore band from Knoxville, Tennessee, known for its heavy sound and complex guitar work.</item>
+        <item>Periphery is an American progressive metal band known for intricate guitar parts and a blend of heavy and melodic sounds.</item>
+        <item>Ween is an American band known for its eclectic mix of rock styles, playful lyrics, and experimental recordings.</item>
+        <item>Primus is an American rock band known for its distinctive bass-driven sound and offbeat songs.</item>
+        <item>Trivium is an American heavy metal band from Florida that combines thrash metal, metalcore, and melodic elements.</item>
+        <item>Hootie and the Blowfish is an American rock band known for its melodic sound and hits from the 1990s.</item>
+        <item>Korn is an American band widely associated with the development of nu metal, with a heavy sound and emotionally direct lyrics.</item>
+        <item>Three Days Grace is a Canadian rock band known for its hard-hitting sound and emotionally charged songs.</item>
+        <item>Alice in Chains is an American rock band from Seattle known for its dark sound and layered vocal harmonies.</item>
+        <item>Staind is an American rock band known for combining heavy guitars with introspective lyrics.</item>
+        <item>Shinedown is an American rock band known for its powerful vocals and arena-ready songs.</item>
+        <item>Alter Bridge is an American rock band known for its heavy guitar sound and melodic vocals.</item>
     </string-array>
 </resources>
